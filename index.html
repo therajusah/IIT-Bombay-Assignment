@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Supplies</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <h2>Chemical Supplies</h2>
+        <div>
+          <button id="addChemical" title="Add Chemical">
+            <img src="./assets/plus.png" alt="Add" />
+          </button>
+          <button id="downarrow" title="Sort Descending">
+            <img src="./assets/arrow-down.png" alt="Sort Descending" />
+          </button>
+          <button id="uparrow" title="Sort Ascending">
+            <img src="./assets/up-arrow.png" alt="Sort Ascending" />
+          </button>
+          <button id="deleteRow" title="Delete Row">
+            <img src="./assets/delete.png" alt="Delete" />
+          </button>
+          <button id="refreshData" title="Refresh Data">
+            <img src="./assets/refresh-arrow.png" alt="Refresh" />
+          </button>
+          <button id="saveData" title="Save Data">
+            <img src="./assets/diskette.png" alt="Save" />
+          </button>
+        </div>
+      </div>
+      <table class="table table-bordered" id="chemicalTable">
+        <thead>
+          <tr>
+            <th>Sl No.</th>
+            <th>Chemical Name</th>
+            <th>Vendor</th>
+            <th>Density (g/m³)</th>
+            <th>Viscosity (m²/s)</th>
+            <th>Packaging</th>
+            <th>Pack Size</th>
+            <th>Unit</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
